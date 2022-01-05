@@ -26,6 +26,10 @@
       <h2>A {{ frog.color_pat }} Frog</h2>
     {% endif %}
     <p>{{ frog.fun_fact }}</p>
+    <div class="frog-actions">
+      <a href="{% url 'frogs_update' frog.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'frogs_delete' frog.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 

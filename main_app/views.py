@@ -1,11 +1,20 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Frog
 from django.http import HttpResponse
 
 class FrogCreate(CreateView):
   model = Frog
   fields = fields = ['name', 'color_pat', 'fun_fact', 'lifespan']
+  success_url = '/frogs/'
+
+class FrogUpdate(UpdateView):
+  model = Frog
+  # Let's disallow the renaming of a cat by excluding the name field!
+  fields = ['color_pat', 'fun_fact', 'lifespan']
+
+class FrogDelete(DeleteView):
+  model = Frog
   success_url = '/frogs/'
 
 
