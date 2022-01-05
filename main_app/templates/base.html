@@ -1,5 +1,5 @@
 {% load static %}
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,8 +20,7 @@
   <header>
     <div class="header-logo-container">
       <a href="/">
-        <img 
-          src="" 
+        <img  
           alt="The Frog World Logo"
         >
       </a>
@@ -30,7 +29,7 @@
       <ul>
         {% if user.is_authenticated %}
           <li><a href="{% url 'frogs_index' %}">Frog World</a></li>
-          <li><a href="{% url 'frogs_create' %}">Add a Froggie</a></li>
+          <li><a href="{% url 'frogs_create' %}">New Frog</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'logout' %}">Log out</a></li>
         {% else %}

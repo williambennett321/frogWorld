@@ -10,13 +10,10 @@
 {% if object %}
     <h1>Change {{object.name}}'s information</h1>
   {% else %}
-    <h1>Add a Frog</h1>
+    <h1 class="create-frog-header">Create Frog</h1>
   {% endif %}
 
-<div class="page-header">
-  <h1>Add a Froggie</h1>
-  <img  alt="A cat using a computer"/>
-</div>
+<div class="frog-form-align">
 <form action="" method="post" class="form-container">
   {% csrf_token %}
   <table>
@@ -24,5 +21,6 @@
   </table>
   <button type="submit" class="btn submit">Submit!</button>
 </form>
+</div>
 
 {% endblock %}

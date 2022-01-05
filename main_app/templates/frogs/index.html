@@ -7,9 +7,9 @@
 
 {% block content %}
 
+<div class="globe-img"><img alt="Globe" /></div>
 <section class="page-header">
   <h1>Frog World</h1>
-  <img alt="A cool cat" />
 </section>
 
 <section class="card-container">
@@ -25,9 +25,9 @@
         <h2 class="card-title">{{ frog.name }}</h2>
       </a>
         {% if frog.lifespan > 0 %}
-          <p>A {{ frog.lifespan }} year old {{ frog.color_pat }}</p>
+          <p>A {{ frog.lifespan }} year average lifespan.</p>
         {% else %}
-          <p>A {{ frog.color_pat }} kitten.</p>
+          <p>A {{ frog.color_pat }} frog.</p>
         {% endif %}
         <p><small>{{ frog.fun_fact}}</small></p>
       </div>

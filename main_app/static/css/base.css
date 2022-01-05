@@ -26,11 +26,11 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   min-height: 100vh;
-  --nav-bg: rgba(104, 197, 248, .7);
-  --nav-bg-ff: rgba(104, 197, 248, .9);
-  --borders: rgb(36, 116, 248) solid 2px;
-  --text-color: rgb(17, 20, 17);
-  --link-hover-color: rgb(16, 56, 158);
+  --nav-bg: black;
+  --nav-bg-ff: black;
+  --borders: black solid 2px;
+  --text-color: #356F13;
+  --link-hover-color: #ff3800;
   --button-bg: rgb(245, 245, 245);
   --button-bg-hover: rgb(226, 226, 226);
   --submit: rgb(26, 128, 0);
@@ -44,6 +44,7 @@ body {
   --font-l: 1.8rem;
   --font-reg: 1.6rem;
   --card-border-radius: 6px;
+  background-color: #356F13;
 }
 
 header {
@@ -91,13 +92,13 @@ nav li {
 .header-logo-container {
   margin: auto;
   padding: 10px 20px 0;
-  max-width: 500px;
+  max-width: 100px;
 }
 
 .page-header {
   display: flex;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
 }
 
 .btn {
@@ -172,7 +173,6 @@ nav li {
     padding: 0 15px;
   }
 
-  /* visual fix to help align logo */
   .header-logo-container {
     padding-top: 3px;
   }
@@ -240,7 +240,6 @@ nav li {
   }
 
   .header-logo-container {
-    /* visual fix to help align logo */
     padding-top: 6px;
     width: 256px;
     height: 35px;

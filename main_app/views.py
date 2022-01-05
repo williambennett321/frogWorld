@@ -17,6 +17,7 @@ class FrogCreate(LoginRequiredMixin, CreateView):
   login_url = '/'
   model = Frog
   fields = fields = ['name', 'color_pat', 'fun_fact', 'lifespan']
+  success_url = '/frogs/'
   
   def form_valid(self, form):
     form.instance.user = self.request.user

@@ -1,7 +1,7 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
 }
 
 table {
@@ -36,4 +36,14 @@ td > textarea {
 .btn {
   align-self: flex-end;
   margin-right: 40px;
+}
+
+.create-frog-header {
+  display: flex;
+  justify-content: center;
+}
+
+.frog-form-align {
+  display: flex;
+  justify-content: center;
 }
