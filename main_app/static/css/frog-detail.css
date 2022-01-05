@@ -17,7 +17,9 @@
 }
 
 .frog-details {
-  width: 98%;
+
+  margin: auto;
+  width: 45%;
 }
 
 .frog-actions {
@@ -33,6 +35,7 @@
 
 .subsection-title {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 12px;
 }

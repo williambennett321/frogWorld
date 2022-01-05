@@ -36,7 +36,7 @@ main > section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
 }
 
 .login h1 {
@@ -77,9 +77,11 @@ main > section {
   }
 
   .login {
-    border: rgb(36, 116, 248) solid 2px;
+    display: flex;
+    justify-content: center;
+    border: black solid 8px;
     padding: 20px;
-    border-radius: 6px;
+    border-radius: 15px;
   }
 
   .logo-container {

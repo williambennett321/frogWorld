@@ -13,9 +13,13 @@
 
 <section class="frog-container">
   <div class="frog-details">
+    <div>
     <h1>{{ frog.name }}</h1>
+    </div>
+    <div>
     {% if frog.lifespan > 0 %}
       <h2>A {{ frog.lifespan }} year old {{ frog.color_pat }} frog</h2>
+    </div>
     {% else %}
       <h2>A {{ frog.color_pat }} Frog</h2>
     {% endif %}
