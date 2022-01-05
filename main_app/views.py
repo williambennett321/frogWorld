@@ -1,8 +1,12 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.views import LoginView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Frog
 from .forms import DetailsForm
 from django.http import HttpResponse
+
+class Home(LoginView):
+  template_name = 'home.html'
 
 class FrogCreate(CreateView):
   model = Frog

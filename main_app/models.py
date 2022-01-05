@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Frog(models.Model):
@@ -7,6 +8,8 @@ class Frog(models.Model):
   color_pat = models.CharField(max_length=100)
   fun_fact = models.TextField(max_length=250)
   lifespan = models.IntegerField()
+
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
 class Details(models.Model):
   species = models.CharField(max_length=100)
