@@ -13,3 +13,7 @@ def about(request):
 def frogs_index(request):
   frogs = Frog.objects.all()
   return render(request, 'frogs/index.html', { 'frogs': frogs })
+
+def frogs_detail(request, frog_id):
+  frog = Frog.objects.get(id=frog_id)
+  return render(request, 'frogs/detail.html', {'frog': frog})

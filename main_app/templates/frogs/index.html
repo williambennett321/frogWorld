@@ -8,7 +8,7 @@
 {% block content %}
 
 <section class="page-header">
-  <h1>Cat List</h1>
+  <h1>Frog World</h1>
   <img src="{% static 'images/cool-cat.svg' %}" alt="A cool cat" />
   <img src="{% static 'images/happy-cat.svg' %}" alt="A happy cat" />
   <img src="{% static 'images/teacup-cat.svg' %}" alt="A cat in a teacup" />
@@ -18,6 +18,7 @@
 <section class="card-container">
   {% for frog in frogs %}
     <div class="card">
+      <a href="/frogs/{{ frog.id }}">
       <div class="card-content">
         <div class="card-img-container">
           <img 
@@ -26,6 +27,7 @@
           >
         </div>
         <h2 class="card-title">{{ frog.name }}</h2>
+      </a>
         {% if frog.lifespan > 0 %}
           <p>A {{ frog.lifespan }} year old {{ frog.color_pat }}</p>
         {% else %}
@@ -33,6 +35,7 @@
         {% endif %}
         <p><small>{{ frog.fun_fact}}</small></p>
       </div>
+    
     </div>
   {% endfor %}
 </section>
