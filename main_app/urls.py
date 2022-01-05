@@ -9,5 +9,6 @@ urlpatterns = [
   path('frogs/create/', views.FrogCreate.as_view(), name='frogs_create'),
   path('frogs/<int:pk>/update/', views.FrogUpdate.as_view(), name='frogs_update'),
   path('frogs/<int:pk>/delete/', views.FrogDelete.as_view(), name='frogs_delete'),
+  path('accounts/signup/', views.signup, name='signup'),
   path('frogs/<int:frog_id>/add_details/', views.add_details, name='add_details'),
 ]
