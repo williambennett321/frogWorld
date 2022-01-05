@@ -28,8 +28,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/frogs">Frog World</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="{% url 'frogs_index' %}">Frog World</a></li>
+        <li><a href="{% url 'frogs_create' %}">Add a Froggie</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
       </ul>
     </nav>
   </header>

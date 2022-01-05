@@ -1,6 +1,12 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Frog
 from django.http import HttpResponse
+
+class FrogCreate(CreateView):
+  model = Frog
+  fields = fields = ['name', 'color_pat', 'fun_fact', 'lifespan']
+  success_url = '/frogs/'
 
 
 # Create your views here.
