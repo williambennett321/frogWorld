@@ -18,14 +18,14 @@
       alt="A skater boy cat"
     >
   </div>
-  <div class="cat-details">
-    <h1>{{ cat.name }}</h1>
-    {% if cat.age > 0 %}
-      <h2>A {{ cat.age }} year old {{ cat.breed }}</h2>
+  <div class="frog-details">
+    <h1>{{ frog.name }}</h1>
+    {% if frog.lifespan > 0 %}
+      <h2>A {{ frog.lifespan }} year old {{ frog.color_pat }}</h2>
     {% else %}
-      <h2>A {{ cat.breed }} kitten.</h2>
+      <h2>A {{ frog.color_pat }} Frog</h2>
     {% endif %}
-    <p>{{ cat.description }}</p>
+    <p>{{ frog.fun_fact }}</p>
   </div>
 </section>
 
