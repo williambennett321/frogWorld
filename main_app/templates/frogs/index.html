@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block head %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/cat-index.css' %}"/>
+<link rel="stylesheet" type="text/css" href="{% static 'css/frog-index.css' %}"/>
 {% endblock %}
 
 {% block content %}
@@ -25,13 +25,13 @@
             alt="A skater boy cat"
           >
         </div>
-        <h2 class="card-title">{{ cat.name }}</h2>
-        {% if cat.age > 0 %}
-          <p>A {{ cat.age }} year old {{ cat.breed }}</p>
+        <h2 class="card-title">{{ frog.name }}</h2>
+        {% if frog.lifespan > 0 %}
+          <p>A {{ frog.lifespan }} year old {{ frog.color_pat }}</p>
         {% else %}
-          <p>A {{ cat.breed }} kitten.</p>
+          <p>A {{ frog.color_pat }} kitten.</p>
         {% endif %}
-        <p><small>{{ cat.description }}</small></p>
+        <p><small>{{ frog.fun_fact}}</small></p>
       </div>
     </div>
   {% endfor %}
