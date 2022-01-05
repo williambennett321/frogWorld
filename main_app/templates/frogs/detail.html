@@ -12,15 +12,10 @@
 {% block content %}
 
 <section class="frog-container">
-  <div class="frog-img">
-    <img  
-      alt="A skater boy cat"
-    >
-  </div>
   <div class="frog-details">
     <h1>{{ frog.name }}</h1>
     {% if frog.lifespan > 0 %}
-      <h2>A {{ frog.lifespan }} year old {{ frog.color_pat }}</h2>
+      <h2>A {{ frog.lifespan }} year old {{ frog.color_pat }} frog</h2>
     {% else %}
       <h2>A {{ frog.color_pat }} Frog</h2>
     {% endif %}
@@ -36,15 +31,6 @@
   <section class="details">
     <div class="subsection-title">
       <h2>Details</h2>
-      <img  
-        alt="An ice cream cone cat"
-      />
-      <img 
-        alt="A cat as onigiri"
-      />
-      <img 
-        alt="A kabob of kittens"
-      />
     </div>
     <h3>Add Details</h3>
     <form

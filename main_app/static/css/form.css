@@ -34,8 +34,8 @@ td > textarea {
 }
 
 .btn {
-  align-self: flex-end;
-  margin-right: 40px;
+  align-self: center;
+  /* margin-right: 40px; */
 }
 
 .create-frog-header {
@@ -46,4 +46,5 @@ td > textarea {
 .frog-form-align {
   display: flex;
   justify-content: center;
+  margin-left: -20px;
 }
