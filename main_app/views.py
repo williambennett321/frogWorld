@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Frog
+from .forms import DetailsForm
 from django.http import HttpResponse
 
 class FrogCreate(CreateView):
@@ -31,4 +32,14 @@ def frogs_index(request):
 
 def frogs_detail(request, frog_id):
   frog = Frog.objects.get(id=frog_id)
-  return render(request, 'frogs/detail.html', {'frog': frog})
+  details_form = DetailsForm()
+  return render(request, 'frogs/detail.html', {'frog': frog, 'details_form': details_form})
+
+def add_details(request, frog_id):
+  form = DetailsForm(request.POST)
+  if form.is_valid():
+    new_details = form.save(commit=False)
+    new_details.frog_id = frog_id
+    new_details.save()
+  return redirect('frogs_detail', frog_id=frog_id)
+  pass

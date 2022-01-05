@@ -13,8 +13,7 @@
 
 <section class="frog-container">
   <div class="frog-img">
-    <img 
-      src="{% static 'images/sk8r-boi-cat.svg' %}" 
+    <img  
       alt="A skater boy cat"
     >
   </div>
@@ -37,35 +36,42 @@
   <section class="details">
     <div class="subsection-title">
       <h2>Details</h2>
-      <img 
-        src="" 
+      <img  
         alt="An ice cream cone cat"
       />
       <img 
-        src=""
         alt="A cat as onigiri"
       />
       <img 
-        src=""
         alt="A kabob of kittens"
       />
     </div>
+    <h3>Add Details</h3>
+    <form
+      action="{% url 'add_details' frog.id %}"
+      method="post" 
+      class="subsection-content"
+    >
+      {% csrf_token %}
+      {{ details_form.as_p }}
+      <button type="submit" class="btn submit">Add Details</button>
+    </form>
+    <h3>Choices: </h3>
     <table>
       <thead>
-        <tr><th>Date</th><th>Meal</th></tr>
+        <tr><th>Species</th><th>Diet</th><th>Habitat</th></tr>
       </thead>
       <tbody>
-        {% for feeding in cat.feeding_set.all %}
+        {% for details in frog.details_set.all %}
           <tr>
-            <td>{{feeding.date}}</td>
-            <td>{{feeding.get_meal_display}}</td>
+            <td>{{details.species}}</td>
+            <td>{{details.diet}}</td>
+            <td>{{details.habitat}}</td>
           </tr>
         {% endfor %}
       </tbody>
     </table>
   </section>
 </div>
-
-{% endblock %}
 
 {% endblock %}
