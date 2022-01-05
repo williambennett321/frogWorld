@@ -6,10 +6,12 @@
 }
 
 .card {
-  width: 275px;
+  width: 250px;
   margin: 10px;
   border: var(--borders);
-  box-shadow: var(--card-box-shadow);
+  /* box-shadow: var(--card-box-shadow); */
+  background-color: black;
+  color: #291540;
 }
 
 .card-content {
@@ -53,4 +55,8 @@
   display:flex;
   justify-content: center;
   width: 100%;
+}
+
+body {
+  background-color: #291540;
 }

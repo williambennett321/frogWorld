@@ -26,11 +26,11 @@
         <h2 class="card-title">{{ frog.name }}</h2>
       </a>
         {% if frog.lifespan > 0 %}
-          <p>A {{ frog.lifespan }} year average lifespan.</p>
+          <p><strong> A {{ frog.lifespan }} year average lifespan.</strong></p>
         {% else %}
           <p>A {{ frog.color_pat }} frog.</p>
         {% endif %}
-        <p><small>{{ frog.fun_fact}}</small></p>
+        <p>{{ frog.fun_fact}}</p>
       </div>
     
     </div>
