@@ -8,8 +8,15 @@ class Frog(models.Model):
   fun_fact = models.TextField(max_length=250)
   lifespan = models.IntegerField()
 
+class Details(models.Model):
+  species = models.CharField(max_length=100)
+  diet = models.CharField(max_length=100)
+  habitat = models.TextField(max_length=250)
+
+  frog = models.ForeignKey(Frog, on_delete=models.CASCADE)
+
   def __str__(self):
-    return self.name
+    return self.species
 
   def get_absolute_url(self):
     return reverse('frogs_detail', kwargs={'frog_id': self.id})
