@@ -99,3 +99,11 @@ main > section {
     min-height: calc(100vh - 57.6px);
   }
 }
+
+.home-header {
+  display:flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bolder;
+  border: black solid 2px;
+}

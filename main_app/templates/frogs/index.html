@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<div class="globe-img"><img alt="Globe" /></div>
+<div class="globe-img"><img class= "globe-image" src="{% static "images/globe.png" %}"alt="Globe" /></div>
 <section class="page-header">
   <h1>Frog World</h1>
 </section>
@@ -18,7 +18,8 @@
       <a href="{% url 'frogs_detail' frog.id %}">
       <div class="card-content">
         <div class="card-img-container">
-          <img 
+          <img class="frog-img-holder"
+          src="{% static "images/frogholder.png" %}"
             alt="A skater boy cat"
           >
         </div>

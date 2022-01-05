@@ -8,8 +8,10 @@
 {% block content %}
 
   <div class="frog-container">
-    <img alt="Frog World Frog" />
-    <h2>Frog World</h2>
+    <div class="home-image">
+    <img src="{% static "images/frog.png" %}" alt="Frog World Frog" />
+    </div>
+    <h1 class = "home-header">Frog World</h1>
 </div>
 
 {% if not user.is_authenticated %}
