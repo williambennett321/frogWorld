@@ -27,7 +27,6 @@ The first step in the process is to sign up through a secured system to ensure t
   <li><a href="https://www.postgresql.org/">PSQL</a></li>
   <li><a href="https://www.python.org/">Python</a></li>
   <li><a href="https://www.djangoproject.com/">Django</a></li>
-  <li><a href="https://reactjs.org/">HTML</a></li>
   <li><a href="https://devcenter.heroku.com/">Heroku</a></li>
   <li>Git</li>
   <li>HTML</li>
