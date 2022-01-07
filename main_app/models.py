@@ -10,6 +10,9 @@ class Frog(models.Model):
   lifespan = models.IntegerField()
 
   user = models.ForeignKey(User, on_delete=models.CASCADE)
+  
+  def get_absolute_url(self):
+    return reverse('frogs_detail', kwargs={'frog_id': self.id})
 
 class Details(models.Model):
   species = models.CharField(max_length=100)
@@ -21,5 +24,5 @@ class Details(models.Model):
   def __str__(self):
     return self.species
 
-  def get_absolute_url(self):
-    return reverse('frogs_detail', kwargs={'frog_id': self.id})
+
+  
