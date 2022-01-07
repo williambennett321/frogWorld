@@ -7,7 +7,7 @@ The inspiration came from a passion for frogs, and potentially owning one. I als
 
 <br /><br />
 <h2>Getting Started</h2>
-The first step in the process is to sign up through a secured system to ensure the authorization of your account. The next step is to create a frog that you will be rendered to the frog world. The frog details will allow you to post an environment which each of your frogs that is best suited to that frog.
+The first step in the process is to sign up through a secured system to ensure the authorization of your account. The next step is to create a frog that  will be rendered to the frog world. The frog details will allow you to post an environment which each of your frogs that is best suited to that frog.
 
 <br /><br />
 <h2>Screenshots</h2>
