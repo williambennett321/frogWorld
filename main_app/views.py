@@ -25,15 +25,12 @@ class FrogCreate(LoginRequiredMixin, CreateView):
 
 class FrogUpdate(LoginRequiredMixin, UpdateView):
   model = Frog
-  # Let's disallow the renaming of a cat by excluding the name field!
   fields = ['color_pat', 'fun_fact', 'lifespan']
 
 class FrogDelete(LoginRequiredMixin, DeleteView):
   model = Frog
   success_url = '/frogs/'
 
-
-# Create your views here.
 def home(request):
   return render(request, 'home.html')
 
